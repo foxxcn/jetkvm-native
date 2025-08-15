@@ -79,7 +79,7 @@ int main(int argc, char **argv)
 
     init_lvgl();
 
-    if (connect_ctrl_client("/var/run/jetkvm_ctrl.sock") != 0)
+    if (connect_ctrl_client("/var/run/rekvm_ctrl.sock") != 0)
     {
         printf("can not connect to ctrl server\n");
         return -1;

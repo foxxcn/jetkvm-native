@@ -16,7 +16,7 @@ CC = $(RK_APP_CROSS)-gcc
 
 CFLAGS = -I $(RK_MEDIA_INCLUDE_PATH) -I $(RK_MEDIA_INCLUDE_PATH)/libdrm -I$(LVGL_DIR)/ -I./ui
 LDFLAGS ?=  -L $(RK_APP_MEDIA_LIBS_PATH) -lpthread -lrockit -lrockchip_mpp -lrga -lm -O3 -g0
-BIN 			= jetkvm_native
+BIN 			= rekvm_native
 
 #Collect the files to compile
 MAINSRC = $(wildcard ./*.c ./ui/*.c)
